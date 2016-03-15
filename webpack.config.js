@@ -3,11 +3,11 @@ module.exports = {
 		'./src/App.js'
 	],
 	output: {
-		path: __dirname,
+		path: __dirname + 'build',
 		filename: 'app.js'
 	},
 	module: {
-		loader: [{
+		loaders: [{
 			test: /\.jsx?$/,
 			loader: 'babel'
 		}]
